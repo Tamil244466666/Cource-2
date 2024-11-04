@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import {Link} from "react-router-dom" 
 
 const HomePage  = ()=>{
     
@@ -46,7 +47,7 @@ useEffect(()=>{
                         <br/>
                         <p className="HeroTextSub">Give yourself an upgrade with our inspiring online courses and join a global community of learners</p>
                         <br/>
-                        <button>Get Started</button>
+                        <button><Link to="/form" style={{textDecoration:"none",color:"black"}}>Get Started</Link></button>
                     </div>
                 </div>
                 <div className="PlacementDiv">
