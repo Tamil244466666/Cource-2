@@ -29,7 +29,7 @@ import axios from 'axios'
 
 
 const submitHandler = (event)=>{
-    // event.preventDefault();
+    event.preventDefault();
     axios.post('https://cource-project-backend.onrender.com/form/',{FormData:formdata})
     .then((res)=>{
         // alert(res.data.status);
